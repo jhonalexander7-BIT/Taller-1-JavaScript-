@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes Principales</title>
+    <script src="../js/ejemplo1.js"></script>
+</head>
+
+<body>
+    <script>
+
+        h1 = crearNodoConTexto("h1", "Personajes Principales de DeadPool")
+        DeadPool = crearNodoConTexto("h2", "Deadpool (Wade Wilson)")
+    
+   
+        parrafo1 = crearNodo("p")
+        textoP1 = document.createTextNode("Deadpool, también conocido como")     
+        textoP2 = document.createTextNode(", es un anti-heroe de marvel conocido por su humor sarcastico y sus habilidades de combate.")
+        strong1 = crearNodoConTexto("strong", "Wade Wilson")
+        parrafo1.appendChild(textoP1)
+        parrafo1.appendChild(strong1)
+        parrafo1.appendChild(textoP2)
+        img1 = crearImagen("../recursos/imagenes/imagen1.jpg", "wade wilson","200px", "100px")
+        
+        vanessaCar = crearNodoConTexto("h2", "Vanessa")
+        parrafo2 = crearNodo("p")
+        em = crearNodoConTexto("em","Vanessa Carlysle")     
+        textoP3 = document.createTextNode(" es la novia de Wade Wilson. Es una figura clave en la vida de Deadpool y su motivación principal en la historia.")
+        parrafo2.appendChild(em)
+        parrafo2.appendChild(textoP3)
+        img2 = crearImagen("../recursos/imagenes/imagen2.jpg", "vanessa","200px", "100px")
+        
+        
+        coloso = crearNodoConTexto("h2", "Colossus")
+        parrafo3 = crearNodo("p")
+        textoP4 = document.createTextNode("Colossus, también conocido como ")     
+        textoP5 = document.createTextNode("es un miembro de los X-Men que intenta guiar a Deadpool hacia un camino más heroico.")
+        abbr = crearAbbr("Piortr <<peter>> Nikolaievitch Rasputin", "Coloso,")
+        parrafo3.appendChild(textoP4)
+        parrafo3.appendChild(abbr)
+        parrafo3.appendChild(textoP5)
+
+        img3 = crearImagen("../recursos/imagenes/imagen3.webp","coloso","200px","360px")
+        parrafo4 = crearNodoConTexto("p","Estos son solo algunos de los personajes memorables de la pelicula Deadpool ")
+        
+
+    
+        
+        adicionarNodoABody(h1)
+        adicionarNodoABody(DeadPool)
+        adicionarNodoABody(parrafo1)
+        adicionarNodoABody(img1)
+        adicionarNodoABody(vanessaCar)
+        adicionarNodoABody(parrafo2)
+        adicionarNodoABody(img2)
+        adicionarNodoABody(coloso)
+        adicionarNodoABody(parrafo3)
+        adicionarNodoABody(img3)
+        adicionarNodoABody(parrafo4)
+
+    </script>
+    
+</body>
+</html>
